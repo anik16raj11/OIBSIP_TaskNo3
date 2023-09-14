@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/Img/backg1.jpg") no-repeat center center/cover;
+    color: #222;
+    font-size: 1rem;
+}
+
+.temp-converter{
+    background: #fff;
+    width: 100%;
+    min-width: 320px;
+    padding: 20px 25px 45px;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 6px solid rgb(190, 190, 190);
+    box-shadow: -5px -5px 250px 0 rgba(255, 255, 255, 0.02) inset;
+    backdrop-filter: blur(21px);
+}
+
+.title, .temp-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    color: #222;
+    gap: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.result{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.result-heading{
+    color: #555;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.celsius-value{
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    transition: all .45s ease;
+}
+
+.degree-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.degree-field{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+.label{
+    color: #555;
+    font-size: .8rem;
+    margin-bottom: 5px;
+}
+
+input, select{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+input:focus{
+    border: 1px solid #1f1d92;
+}
+
+option{
+    background: #120fb9;
+    color: #f6f6f6;
+}
+
+#convert-btn{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #3633f3, #120fb9);
+    color: #f6f6f6;
+    padding: 12px 80px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#reset-btn{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #3633f3, #120fb9);
+    color: #f6f6f6;
+    padding: 12px 80px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#convert-btn:hover{
+    background: linear-gradient(to bottom, #3c39d5, #161481);
+}
+
+#reset-btn:hover{
+    background: linear-gradient(to bottom, #3c39d5, #161481);
+}
+
+.fa{
+    margin-left: -12px;
+    margin-right: 8px;
+}
